@@ -1,0 +1,607 @@
+{
+  "schema_version": "seedance-source-registry.v1",
+  "generated_at": "2026-05-30",
+  "sources": [
+    {
+      "id": "bytedance-seedance-20-launch-2026-02-12",
+      "title": "Seedance 2.0 Official Launch",
+      "url": "https://seed.bytedance.com/en/blog/seedance-2-0-official-launch",
+      "language": "en",
+      "source_type": "official",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-02-12",
+      "confidence": "high",
+      "surfaces": ["model"],
+      "claims": [
+        "supports text/image/audio/video input",
+        "supports up to 9 images, 3 videos, 3 audio clips",
+        "supports 15s multi-shot audio-video output",
+        "mentions dual-channel audio and multimodal reference"
+      ],
+      "volatile_fields": ["performance_rankings", "policy"],
+      "repo_actions": ["refresh api-status", "add multimodal reference examples", "add audio/video continuation examples"],
+      "do_not_use_for": ["pricing guarantees", "API endpoint contract"]
+    },
+    {
+      "id": "bytedance-seedance-20-model-page",
+      "title": "Seedance 2.0 Model Page",
+      "url": "https://seed.bytedance.com/en/seedance2_0",
+      "language": "en",
+      "source_type": "official",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "high",
+      "surfaces": ["model"],
+      "claims": [
+        "unified multimodal audio-video architecture",
+        "supports text/image/audio/video inputs",
+        "references performance, lighting, shadow, and camera movement"
+      ],
+      "volatile_fields": ["benchmark_rankings"],
+      "repo_actions": ["use as stable top-level capability source"],
+      "do_not_use_for": ["API limits", "pricing"]
+    },
+    {
+      "id": "arxiv-seedance-20-model-card-2604-14148",
+      "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+      "url": "https://arxiv.org/abs/2604.14148",
+      "language": "en",
+      "source_type": "official_model_card",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-04-15",
+      "confidence": "high",
+      "surfaces": ["model"],
+      "claims": [
+        "4-15 second audio-video generation",
+        "native 480p and 720p in model card",
+        "up to 3 videos, 9 images, 3 audio clips as references",
+        "Seedance 2.0 Fast is an accelerated variant"
+      ],
+      "volatile_fields": ["open_platform_limits", "benchmarks"],
+      "repo_actions": ["cite for model limits", "add Fast naming note"],
+      "do_not_use_for": ["current commercial availability"]
+    },
+    {
+      "id": "volcengine-ark-model-list-2026-05-29",
+      "title": "Volcengine Ark Model List",
+      "url": "https://www.volcengine.com/docs/82379/1330310?redirect=1&lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-29",
+      "confidence": "medium",
+      "surfaces": ["api"],
+      "claims": ["Volcengine maintains the official Ark model list and Seedance 2.0 tutorial/API navigation"],
+      "volatile_fields": ["model_id", "pricing", "resolution", "quota", "region"],
+      "repo_actions": ["recheck before every release", "store model IDs separately from stable model capabilities"],
+      "do_not_use_for": ["unverified pricing promises"]
+    },
+    {
+      "id": "volcengine-seedance-20-video-api-2026-05-21",
+      "title": "Volcengine Seedance 2.0 Video Generation API Docs",
+      "url": "https://www.volcengine.com/docs/82379/1520757?lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-21",
+      "confidence": "medium",
+      "surfaces": ["api"],
+      "claims": ["video generation API docs include create/query/list/cancel-delete task flow"],
+      "volatile_fields": ["request_schema", "response_schema", "quotas", "pricing"],
+      "repo_actions": ["document async task lifecycle", "add API freshness checklist"],
+      "do_not_use_for": ["static SDK examples without live verification"]
+    },
+    {
+      "id": "volcengine-seedance-20-tutorial-2026-05-29",
+      "title": "Volcengine Doubao Seedance 2.0 Series Tutorial",
+      "url": "https://www.volcengine.com/docs/82379/2291680?lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-29",
+      "confidence": "medium",
+      "surfaces": ["api", "workflow"],
+      "claims": [
+        "tutorial shows Seedance 2.0 and Seedance 2.0 Fast as current Volcengine model options",
+        "example model IDs include doubao-seedance-2-0-260128 and doubao-seedance-2-0-fast-260128",
+        "tutorial examples use public URL references for image/video/audio assets",
+        "current snippets expose first-frame and last-frame role guidance on the Volcengine surface"
+      ],
+      "volatile_fields": ["model_id", "request_schema", "pricing", "region", "entitlement"],
+      "repo_actions": ["refresh model-name map", "keep API claims recheck-required"],
+      "do_not_use_for": ["guaranteed availability on every account or region"]
+    },
+    {
+      "id": "volcengine-video-generation-tutorial-2026-05-29",
+      "title": "Volcengine Video Generation Tutorial",
+      "url": "https://www.volcengine.com/docs/82379/2298881?lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-29",
+      "confidence": "medium",
+      "surfaces": ["api", "workflow"],
+      "claims": [
+        "video generation tutorial was observed updated on 2026-05-29 18:39:35",
+        "use as the active Volcengine place to recheck task lifecycle and video-generation workflow fields",
+        "search snippets expose first_frame and last_frame roles, return_last_frame, web_search tools, and reference-file combinations"
+      ],
+      "volatile_fields": ["request_schema", "model_id", "pricing", "region", "face_policy", "input_combinations"],
+      "repo_actions": ["add api-workflow reference", "update first-last-frame boundary", "source-gate API examples"],
+      "do_not_use_for": ["universal BytePlus or Runway API schema"]
+    },
+    {
+      "id": "volcengine-model-pricing-2026-05-28",
+      "title": "Volcengine Ark Model Pricing",
+      "url": "https://www.volcengine.com/docs/82379/1544106?lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-28",
+      "confidence": "medium",
+      "surfaces": ["pricing"],
+      "claims": [
+        "pricing page was observed updated on 2026-05-28 11:40:17",
+        "Volcengine pricing can be discussed only with surface, date, currency, model, and caveat"
+      ],
+      "volatile_fields": ["price", "currency", "model_id", "resolution", "minimum_charge", "calculator_behavior"],
+      "repo_actions": ["narrow no-pricing caveat to BytePlus JS pages", "require recheck wording"],
+      "do_not_use_for": ["BytePlus pricing", "wrapper pricing", "future price guarantees"]
+    },
+    {
+      "id": "volcengine-seedance-20-prompt-guide-2026-05-15",
+      "title": "Volcengine Doubao Seedance 2.0 Series Prompt Guide",
+      "url": "https://www.volcengine.com/docs/82379/2222480?lang=zh",
+      "language": "zh",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-15",
+      "confidence": "medium",
+      "surfaces": ["prompting"],
+      "claims": [
+        "prompt guide reinforces multimodal reference prompting",
+        "guide frames text, video, image, and audio references as role-bound inputs"
+      ],
+      "volatile_fields": ["examples", "surface_controls"],
+      "repo_actions": ["use for role-bound reference wording"],
+      "do_not_use_for": ["universal UI or API support claims"]
+    },
+    {
+      "id": "volcengine-developer-seedance-api-online-2026-04",
+      "title": "Seedance 2.0 API Service Online - Volcengine Developer Community",
+      "url": "https://developer.volcengine.com/articles/7628567056649125942",
+      "language": "zh",
+      "source_type": "official_ecosystem_article",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-04",
+      "confidence": "medium",
+      "surfaces": ["api", "ecosystem", "safety"],
+      "claims": [
+        "Volcengine developer article says Seedance 2.0 API service is online",
+        "article mentions portrait and copyright safety standards",
+        "article mentions face verification, portrait authorization, virtual portrait assets, and BytePlus overseas API service"
+      ],
+      "volatile_fields": ["availability", "authorization_flow", "overseas_service", "enterprise_examples"],
+      "repo_actions": ["add ecosystem/news caveat", "avoid treating article as an API contract"],
+      "do_not_use_for": ["exact API schema", "pricing", "account entitlement"]
+    },
+    {
+      "id": "byteplus-modelark-digital-character-library",
+      "title": "BytePlus ModelArk Digital Character Library",
+      "url": "https://docs.byteplus.com/api/docs/ModelArk/2223965",
+      "language": "en",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-04",
+      "confidence": "medium",
+      "surfaces": ["api", "creator-ui"],
+      "claims": ["digital character library is beta", "this surface says real human images are not supported"],
+      "volatile_fields": ["real_person_policy", "beta_status"],
+      "repo_actions": ["add surface-specific real-person caveat"],
+      "do_not_use_for": ["universal Seedance model policy"]
+    },
+    {
+      "id": "byteplus-modelark-pricing-js-caveat-2026-05-30",
+      "title": "BytePlus ModelArk Pricing Page Caveat",
+      "url": "https://docs.byteplus.com/en/docs/ModelArk/1099320",
+      "language": "en",
+      "source_type": "official_platform_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "low",
+      "surfaces": ["pricing"],
+      "claims": [
+        "public page is JavaScript-rendered in static fetch",
+        "do not quote Seedance 2.0 BytePlus pricing or model IDs from this page without live console verification"
+      ],
+      "volatile_fields": ["pricing", "model_id", "quota", "region"],
+      "repo_actions": ["add no-pricing-guess caveat"],
+      "do_not_use_for": ["current Seedance 2.0 pricing"]
+    },
+    {
+      "id": "comfyui-seedance-20-workflows",
+      "title": "ComfyUI Seedance 2.0 Partner Workflow Docs",
+      "url": "https://docs.comfy.org/zh/tutorials/partner-nodes/bytedance/seedance-2-0",
+      "language": "zh",
+      "source_type": "platform_surface",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "medium",
+      "surfaces": ["workflow"],
+      "claims": [
+        "ComfyUI exposes T2V, R2V, and FLF2V workflows",
+        "real-person portrait workflow may require ByteDance liveness/asset verification"
+      ],
+      "volatile_fields": ["integration_backend", "real_person_policy"],
+      "repo_actions": ["add first-last-frame guide", "add portrait policy matrix"],
+      "do_not_use_for": ["official model naming beyond ComfyUI surface"]
+    },
+    {
+      "id": "runway-seedance2-api-guide-2026-05",
+      "title": "Runway Seedance 2 API Guide",
+      "url": "https://docs.dev.runwayml.com/guides/seedance/",
+      "language": "en",
+      "source_type": "official_third_party_surface",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "high",
+      "surfaces": ["api", "workflow"],
+      "claims": [
+        "Runway API uses model id seedance2",
+        "Runway documents 5-15 second duration and optional image, video, and audio references",
+        "Runway local files use Uploads API and runway:// URIs",
+        "Runway notes SDK types may lag seedance2-specific fields such as referenceAudio",
+        "audio references require a prompt and cannot be the only reference on T2V"
+      ],
+      "volatile_fields": ["region", "plan", "ratio", "sdk_support", "audio_reference_rules", "moderation"],
+      "repo_actions": ["add Runway surface row", "update api-workflow", "add audio-combination caveat"],
+      "do_not_use_for": ["Volcengine field names", "ByteDance official API contract", "pricing outside Runway"]
+    },
+    {
+      "id": "runway-seedance2-help-2026-05",
+      "title": "Runway Creating with Seedance 2.0",
+      "url": "https://help.runwayml.com/hc/en-us/articles/50488490233363-Creating-with-Seedance-2-0",
+      "language": "en",
+      "source_type": "official_third_party_surface",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "high",
+      "surfaces": ["creator-ui", "workflow"],
+      "claims": [
+        "Runway documents Seedance 2.0 creator workflow and plan/resolution caveats",
+        "Runway web UI behavior should be treated separately from Volcengine or BytePlus API behavior"
+      ],
+      "volatile_fields": ["plan", "resolution", "credit_mode", "moderation", "region"],
+      "repo_actions": ["separate Runway web and API guidance"],
+      "do_not_use_for": ["Volcengine/BytePlus implementation details"]
+    },
+    {
+      "id": "runway-mcp-announcement-2026-05-27",
+      "title": "Runway MCP Announcement",
+      "url": "https://runwayml.com/news/mcp",
+      "language": "en",
+      "source_type": "agent_surface_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-27",
+      "confidence": "high",
+      "surfaces": ["agent", "mcp"],
+      "claims": [
+        "Runway MCP launched on 2026-05-27",
+        "Runway MCP exposes Seedance 2.0 through MCP-compatible agents tied to the user's Runway account"
+      ],
+      "volatile_fields": ["connector_setup", "plan", "available_models", "regional_access"],
+      "repo_actions": ["add agent-surface note", "avoid treating MCP as ByteDance API availability"],
+      "do_not_use_for": ["Seedance model limits", "Volcengine or BytePlus access"]
+    },
+    {
+      "id": "openai-codex-agent-skills-2026-05",
+      "title": "OpenAI Codex Agent Skills Docs",
+      "url": "https://developers.openai.com/codex/skills",
+      "language": "en",
+      "source_type": "agent_packaging_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "high",
+      "surfaces": ["agent-skill"],
+      "claims": [
+        "skill directory requires SKILL.md with name and description",
+        "scripts, references, assets, and agents folders are optional",
+        "Codex uses progressive disclosure for skill loading",
+        "plugins are installable distribution units for reusable skills and apps"
+      ],
+      "volatile_fields": ["install_flow", "client_support"],
+      "repo_actions": ["add agent-compatibility reference", "tighten README install caveat"],
+      "do_not_use_for": ["Seedance platform claims"]
+    },
+    {
+      "id": "openai-academy-codex-plugins-skills-2026-04-23",
+      "title": "OpenAI Academy: Plugins and Skills",
+      "url": "https://openai.com/academy/codex-plugins-and-skills/",
+      "language": "en",
+      "source_type": "agent_packaging_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-04-23",
+      "confidence": "medium",
+      "surfaces": ["agent-skill", "plugin"],
+      "claims": [
+        "skills teach Codex a process to follow",
+        "plugins connect Codex to external tools and sources",
+        "skills can be selected with dollar-sign invocation in the thread"
+      ],
+      "volatile_fields": ["user_interface", "install_flow"],
+      "repo_actions": ["keep README install wording conservative"],
+      "do_not_use_for": ["Seedance platform claims", "plugin packaging proof"]
+    },
+    {
+      "id": "agent-skills-open-standard-2026-05",
+      "title": "Agent Skills Open Standard Overview",
+      "url": "https://agentskills.io/",
+      "language": "en",
+      "source_type": "agent_packaging_doc",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "medium",
+      "surfaces": ["agent-skill"],
+      "claims": [
+        "Agent Skills are folders with SKILL.md metadata and instructions",
+        "skills can bundle scripts, references, templates, and resources",
+        "agents load skills through discovery, activation, and execution"
+      ],
+      "volatile_fields": ["client_support"],
+      "repo_actions": ["confirm progressive-disclosure design"],
+      "do_not_use_for": ["Codex-specific install guarantees"]
+    },
+    {
+      "id": "avbench-human-aligned-av-generation-2026-05-23",
+      "title": "AVBench: Human-Aligned and Automated Evaluation Benchmark for Audio-Video Generative Models",
+      "url": "https://arxiv.org/abs/2605.24652",
+      "language": "en",
+      "source_type": "academic_benchmark",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-23",
+      "confidence": "medium",
+      "surfaces": ["evaluation"],
+      "claims": [
+        "useful benchmark vocabulary for human-centric audio-video evaluation",
+        "covers visual quality, audio quality, and multi-level cross-modal consistency"
+      ],
+      "volatile_fields": ["benchmark_status", "model_coverage"],
+      "repo_actions": ["improve eval vocabulary"],
+      "do_not_use_for": ["Seedance-specific performance claims"]
+    },
+    {
+      "id": "vabench-cvpr-2026-audio-video-generation",
+      "title": "VABench: A Comprehensive Benchmark for Audio-Video Generation",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Hua_VABench_A_Comprehensive_Benchmark_for_Audio-Video_Generation_CVPR_2026_paper.pdf",
+      "language": "en",
+      "source_type": "academic_benchmark",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-28",
+      "confidence": "medium",
+      "surfaces": ["evaluation"],
+      "claims": [
+        "benchmark covers T2AV, I2AV, and stereo audio-video generation",
+        "evaluation dimensions include text-video, text-audio, video-audio, synchronization, lip-speech consistency, and audio-video QA"
+      ],
+      "volatile_fields": ["benchmark_status", "model_coverage"],
+      "repo_actions": ["improve eval vocabulary"],
+      "do_not_use_for": ["Seedance-specific access or model-ranking claims"]
+    },
+    {
+      "id": "youmind-awesome-seedance-2-prompts",
+      "title": "YouMind OpenLab Awesome Seedance 2 Prompts",
+      "url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts",
+      "language": "multi",
+      "source_type": "community_corpus",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05-27",
+      "confidence": "medium",
+      "surfaces": ["community"],
+      "claims": [
+        "large open prompt corpus for Seedance 2.0 prompt patterns",
+        "useful for camera grammar, timing syntax, and reference-role patterns"
+      ],
+      "volatile_fields": ["prompt_count", "license", "safety"],
+      "repo_actions": ["classify safety before import", "extract structures and vocabulary rather than copying prompts"],
+      "do_not_use_for": ["unsafe examples", "IP/brand/public-figure imitation"]
+    },
+    {
+      "id": "localized-ja-seedance-guide-2026-05",
+      "title": "Seedance 2.0 Japanese Usage and Prompt Tips",
+      "url": "https://www.seedance.tv/ja/blog/seedance-2-0",
+      "language": "ja",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-03",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Japanese guide emphasizes prompt, generate, review, refine workflow",
+        "Japanese guidance highlights low-angle shots, slow dolly movement, and handheld camera feel as useful camera language"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Japanese community-informed examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-ko-seedance-manual-2026-05",
+      "title": "Korean Seedance 2.0 Prompt Manual",
+      "url": "https://seedance22.com/ko/guide/seedance-2-0-prompt-manual/",
+      "language": "ko",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-03",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Korean guide reinforces explicit action, effect, camera, character, scene, and sound wording",
+        "Korean examples commonly benefit from stable framing for dialogue and micro-expression"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Korean dialogue and melodrama examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-es-seedance-guide-2026-05",
+      "title": "Spanish Seedance 2.0 Prompt Guide",
+      "url": "https://seedance2.ai/es/guide",
+      "language": "es",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Spanish guide emphasizes clear reference roles such as composition from Imagen 1 and action from Video 2",
+        "Spanish examples support role-map and product-preservation wording"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Spanish role-map examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-ru-seedance-guide-2026-05",
+      "title": "Russian Seedance 2.0 Prompt Guide",
+      "url": "https://seedance2.ai/ru/guide",
+      "language": "ru",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Russian guide emphasizes explicit image, audio, and video references",
+        "Russian wording supports structured prompt sections and role-map constraints"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Russian structured examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-multilingual-code-mix-guide-2026-05",
+      "title": "Seedance 2.0 Multilingual Prompting and Code-Mixed Practice",
+      "url": "https://seedance2.so/blog/seedance-2-prompts-guide",
+      "language": "multi",
+      "source_type": "community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "community guides discuss multilingual prompting and mixed technical vocabulary",
+        "repo should treat code-mixing as clarity guidance, not official behavior or safety evasion"
+      ],
+      "volatile_fields": ["language_support", "example_quality", "surface_behavior"],
+      "repo_actions": ["add safe mixed-language repair boundary", "add multilingual examples"],
+      "do_not_use_for": ["official language support list", "filter behavior guarantees"]
+    },
+    {
+      "id": "asc-studiobinder-shot-language-2026-05",
+      "title": "Professional Shot Language And Shot List Fields",
+      "url": "https://theasc.com/article/shot-craft-camera-movement/",
+      "language": "en",
+      "source_type": "professional_workflow",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["filmmaking", "cinematography"],
+      "claims": [
+        "professional camera language benefits from shot size, angle, camera movement, and subject relationship",
+        "shot lists should preserve production intent and handoff fields"
+      ],
+      "volatile_fields": ["article_availability"],
+      "repo_actions": ["add cinematography shot contract reference", "add professional shot eval"],
+      "do_not_use_for": ["Seedance platform capability"]
+    },
+    {
+      "id": "screenskills-script-supervisor-continuity-2026-05",
+      "title": "Script Supervisor Continuity Practice",
+      "url": "https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/technical/script-supervisor-film-and-tv-drama/",
+      "language": "en",
+      "source_type": "professional_workflow",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["filmmaking", "continuity"],
+      "claims": [
+        "continuity work tracks action, dialogue, camera, props, wardrobe, and scene consistency",
+        "AI video shot plans should keep a continuity ledger across prompts"
+      ],
+      "volatile_fields": ["article_availability"],
+      "repo_actions": ["add shot-list continuity reference", "add multi-shot continuity eval"],
+      "do_not_use_for": ["Seedance model behavior guarantee"]
+    },
+    {
+      "id": "aces-color-management-2026-05",
+      "title": "ACES Overview And AMF Specification",
+      "url": "https://docs.acescentral.com/background/overview/",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "high",
+      "surfaces": ["color", "post"],
+      "claims": [
+        "ACES provides color-management vocabulary and metadata handoff concepts",
+        "AMF can carry ACES metadata through professional workflows"
+      ],
+      "volatile_fields": ["spec_version"],
+      "repo_actions": ["add color pipeline reference", "add ACES no-hallucination eval"],
+      "do_not_use_for": ["claiming Seedance output is ACES-certified"]
+    },
+    {
+      "id": "subtitles-localization-standards-2026-05",
+      "title": "Timed Text, WebVTT, And Caption Accessibility Sources",
+      "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["localization", "accessibility"],
+      "claims": [
+        "subtitles, SDH, forced narrative, and captions should be planned as post deliverables",
+        "generated burned-in text is not a substitute for professional timed text"
+      ],
+      "volatile_fields": ["buyer_requirements", "language_rules"],
+      "repo_actions": ["add subtitles localization reference", "add localization eval"],
+      "do_not_use_for": ["universal delivery requirement"]
+    },
+    {
+      "id": "audio-loudness-post-delivery-2026-05",
+      "title": "Professional Audio Loudness And Mix Delivery Sources",
+      "url": "https://www.itu.int/rec/R-REC-BS.1770",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["audio", "post", "delivery"],
+      "claims": [
+        "professional audio delivery requires loudness, sync, mix, and stem checks",
+        "M&E and stems should be planned when localization is required"
+      ],
+      "volatile_fields": ["buyer_targets", "spec_version"],
+      "repo_actions": ["add audio post delivery reference", "add loudness and stems eval"],
+      "do_not_use_for": ["claiming Seedance produces final compliant mixes"]
+    },
+    {
+      "id": "delivery-qc-imf-dpp-movielabs-2026-05",
+      "title": "Professional Delivery And QC Sources",
+      "url": "https://www.smpte.org/standards/st2067",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["delivery", "qc", "metadata"],
+      "claims": [
+        "professional delivery requires picture, audio, subtitles, metadata, naming, rights, and human QC checks",
+        "IMF/DCP/social delivery assumptions must be separated from Seedance prompt design"
+      ],
+      "volatile_fields": ["buyer_specs", "spec_version", "platform_requirements"],
+      "repo_actions": ["add delivery QC reference", "add delivery preflight eval"],
+      "do_not_use_for": ["universal buyer spec"]
+    }
+  ]
+}
